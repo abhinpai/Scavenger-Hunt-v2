@@ -1,0 +1,93 @@
+.welcome-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-msg-div {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  & h2 {
+    font-family: 'Cinzel Decorative';
+    font-size: 4rem;
+    margin-top: 12px;
+    color: white;
+    text-shadow: 0 0 3px #ff000059;
+    letter-spacing: 0.4rem;
+    margin-bottom: 0;
+    background: linear-gradient(
+      #fae48f73 40%,
+      #ffffff91 50%,
+      #fae48f 60%,
+      #ffc230cc 70%,
+      #9f7f00 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.parallax-effect-img {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+
+  .inner-element {
+    transform: translateZ(40px) scale(0.55);
+    width: 70vw;
+    margin-top: 10%;
+  }
+}
+
+// Iphone
+@media only screen and (max-width: 320px) {
+  .parallax-effect-img {
+    margin-top: 2rem;
+    .inner-element {
+      transform: translateZ(40px) scale(1.2);
+    }
+  }
+  .welcome-msg-div {
+    margin-top: 0rem;
+    & h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+// Tablet
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+  .parallax-effect-img {
+    margin-top: 2rem;
+    .inner-element {
+      transform: translateZ(40px) scale(1.2);
+    }
+  }
+  .welcome-msg-div {
+    margin-top: 0rem;
+    & h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .parallax-effect-img {
+    margin-top: 2rem;
+    .inner-element {
+      transform: translateZ(40px) scale(1.2);
+    }
+  }
+}

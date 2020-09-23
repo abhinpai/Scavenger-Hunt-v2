@@ -1,0 +1,70 @@
+body,
+html {
+  margin: 0;
+  background-color: black;
+  background-image: url('./resources/images/sail-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(0deg, black, #7955482e),
+    url('./resources/images/sail-bg.jpg');
+  height: 100vh;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Caribbean';
+  src: local('sss'), url(./resources/fonts/Caribbean.ttf) format('truetype');
+}
+
+.wodden-btn {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  background-image: url(/static/media/wood-input.6d256f47.png);
+
+  & p {
+    color: #ffefdc;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Cinzel Decorative', auto;
+  }
+}
+
+.frigate-btn {
+  background-image: url('./resources/images/frigate.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  height: 100px;
+  order: 2;
+  cursor: pointer;
+  user-select: none;
+
+  & h3 {
+    letter-spacing: 0.14rem;
+    margin: 0;
+    font-size: 1.4rem;
+    margin-top: -10px;
+    font-family: 'Caribbean';
+    text-shadow: 0 0 3px #ffffff00, 0 0 5px #0000008c;
+    background: linear-gradient(
+      #000000 40%,
+      #00000091 50%,
+      #000000 60%,
+      #000000cc 70%,
+      #080808 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
