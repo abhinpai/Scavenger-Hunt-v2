@@ -3,10 +3,12 @@ const {
   SET_SHOW_LOGIN_PAGE,
   SET_SHOW_QUESTIONS,
   SET_GAME_STARTED,
+  PLAY_MUSIC,
 } = require('./actions');
 
 export const initialState = {
   eventDate: 1602720000,
+  playMusic: false,
   eventTitle: 'THE PIRATES RESURRECT',
   isGameStarted: false, // set this to false when game start this should set from API after login
   data: null,
@@ -24,6 +26,8 @@ const reducer = (state, action) => {
       return { ...state, showQuestions: action.payload.show };
     case SET_GAME_STARTED:
       return { ...state, isGameStarted: action.payload.started };
+    case PLAY_MUSIC:
+      return { ...state, playMusic: action.payload.play };
     default:
       return state;
   }

@@ -5,6 +5,7 @@ import Skull from '../../resources/images/pirate-skull.png';
 import CountDown from '../CountDown/CountDown.jsx';
 import useData from '../../state/dataLayer';
 import { ActionShowLogin } from '../../state/actions';
+import Footer from '../Footer/Footer';
 
 function Landing() {
   const [{ eventTitle, isGameStarted }, dispatch] = useData();

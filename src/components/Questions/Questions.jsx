@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import './Questions.scss';
 import QuestionsImg from '../../resources/images/question_bg.png';
 import ClockImg from '../../resources/images/clock.png';
-import Camera from '../../resources/images/Camera.png';
-import Graphone from '../../resources/images/gramphone.png';
 import { SimpleImg } from 'react-simple-img';
 
 function Questions() {
@@ -43,16 +41,15 @@ function Questions() {
             <div className='questions-div__block__btns__btn  wodden-btn'>
               <p>Skip</p>
             </div>
-            <div style={{marginLeft: 'auto'}} className='questions-div__block__btns__btn  wodden-btn'>
+            <div
+              style={{ marginLeft: 'auto' }}
+              className='questions-div__block__btns__btn  wodden-btn'
+            >
               <p>Submit</p>
             </div>
           </div>
         </div>
       </main>
-      <footer className='question__footer'>
-        <img src={Camera} alt='Camera' />
-        <img src={Graphone} alt='Graphone' />
-      </footer>
     </div>
   );
 }
