@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import './RuleBook.scss';
 import PageImage from '../../resources/images/page.jpg';
-import Cover from '../../resources/images/book-front-cover.jpg';
+import Cover from '../../resources/images/cover.svg';
+import Back from '../../resources/images/book-front-cover.jpg';
 import { ActionGameStarted, ActionShowQuestions } from '../../state/actions';
 import useData from '../../state/dataLayer';
 
@@ -58,68 +59,62 @@ function RuleBook() {
         <div className='right'>
           <figure
             className='back'
+            style={{ backgroundImage: `url(${Back})` }}
+          />
+          <figure
+            className='front'
+            style={{ backgroundImage: `url(${PageImage})` }}
+          />
+        </div>
+        <div className='right'>
+          <figure
+            className='back'
+            style={{ backgroundImage: `url(${PageImage})` }}
+          />
+          <figure
+            className='front'
+            style={{ backgroundImage: `url(${PageImage})` }}
+          />
+        </div>
+        <div className='right'>
+          <figure
+            className='back'
+            style={{ backgroundImage: `url(${PageImage})` }}
+          />
+          <figure
+            className='front'
+            style={{ backgroundImage: `url(${PageImage})` }}
+          />
+        </div>
+        <div className='right'>
+          <figure
+            className='back'
+            style={{ backgroundImage: `url(${PageImage})` }}
+          />
+          <figure
+            className='front'
+            style={{ backgroundImage: `url(${PageImage})` }}
+          />
+        </div>
+        <div className='right'>
+          <figure
+            className='back'
+            style={{ backgroundImage: `url(${PageImage})` }}
+          />
+          <figure
+            className='front'
+            style={{ backgroundImage: `url(${PageImage})` }}
+          />
+        </div>
+        <div className='right'>
+          <figure
+            className='back'
+            style={{ backgroundImage: `url(${PageImage})` }}
+          />
+          <figure
+            className='front'
             style={{ backgroundImage: `url(${Cover})` }}
-          ></figure>
-          <figure
-            className='front'
-            style={{ backgroundImage: `url(${PageImage})` }}
-          ></figure>
-        </div>
-        <div className='right'>
-          <figure
-            className='back'
-            style={{ backgroundImage: `url(${PageImage})` }}
-          ></figure>
-          <figure
-            className='front'
-            style={{ backgroundImage: `url(${PageImage})` }}
-          ></figure>
-        </div>
-        <div className='right'>
-          <figure
-            className='back'
-            style={{ backgroundImage: `url(${PageImage})` }}
-          ></figure>
-          <figure
-            className='front'
-            style={{ backgroundImage: `url(${PageImage})` }}
-          ></figure>
-        </div>
-        <div className='right'>
-          <figure
-            className='back'
-            style={{ backgroundImage: `url(${PageImage})` }}
-          ></figure>
-          <figure
-            className='front'
-            style={{ backgroundImage: `url(${PageImage})` }}
-          ></figure>
-        </div>
-        <div className='right'>
-          <figure
-            className='back'
-            style={{ backgroundImage: `url(${PageImage})` }}
-          ></figure>
-          <figure
-            className='front'
-            style={{ backgroundImage: `url(${PageImage})` }}
-          ></figure>
-        </div>
-        <div className='right'>
-          <figure
-            className='back'
-            style={{ backgroundImage: `url(${PageImage})` }}
-          ></figure>
-          <figure
-            className='front'
-            style={{ backgroundImage: `url(${Cover})` }}
-          >
-            <h1>The Rule</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Adipisci, modi.
-            </p>
-          </figure>
+          />
         </div>
       </div>
       <div className='rule-btn-div'>

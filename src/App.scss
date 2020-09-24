@@ -11,6 +11,10 @@ html {
   overflow: hidden;
 }
 
+.dark-body-bg {
+  background: linear-gradient(0deg, black, #080808de), url(/static/media/sail-bg.b2453c8d.jpg);
+}
+
 @font-face {
   font-family: 'Caribbean';
   src: local('sss'), url(./resources/fonts/Caribbean.ttf) format('truetype');
@@ -26,7 +30,7 @@ html {
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
-  background-image: url(/static/media/wood-input.6d256f47.png);
+  background-image: url(./resources/images/wood-input.png);
 
   & p {
     color: #ffefdc;

@@ -10,7 +10,7 @@ export const initialState = {
   eventTitle: 'THE PIRATES RESURRECT',
   isGameStarted: false, // set this to false when game start this should set from API after login
   data: null,
-  showLoginPage: true, // This will be update on click of login btn from landing page
+  showLoginPage: false, // This will be update on click of login btn from landing page
   showQuestions: false, // after successfull login set this to true
 };
 

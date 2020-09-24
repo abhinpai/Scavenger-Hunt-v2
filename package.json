@@ -12,7 +12,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-parallax-tilt": "^1.4.65",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-simple-img": "^2.3.9"
   },
   "scripts": {
     "start": "react-scripts start",

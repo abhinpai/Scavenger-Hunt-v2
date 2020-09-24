@@ -22,15 +22,19 @@ function Landing() {
         <img src={Skull} className='inner-element' alt='pic' />
       </Tilt>
 
+      {/* Remove the below comment when you deploy live */}
       <div className='welcome-msg-div'>
         <h2 style={{ color: 'white' }}>{eventTitle}</h2>
-        {!isGameStarted ? (   
+        {/* {!isGameStarted ? (   
           <CountDown />
-        ) : (
-          <div className='frigate-btn' onClick={() => ActionShowLogin(dispatch, true)}>
-            <h3>Get Into The Dark Zone</h3>
-          </div>
-        )}
+        ) : ( */}
+        <div
+          className='frigate-btn'
+          onClick={() => ActionShowLogin(dispatch, true)}
+        >
+          <h3>Get Into The Dark Zone</h3>
+        </div>
+        {/* )} */}
       </div>
     </div>
   );

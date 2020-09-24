@@ -7,15 +7,16 @@ function CountDown() {
   const [{ eventDate }] = useData();
   const [timeUp, setTimeUp] = useState(false);
 
-  var currentTime = moment().unix(); //1602719995
-  var diffTime = eventDate - currentTime;
-  var duration = moment.duration(diffTime * 1000, 'milliseconds');
-  var interval = 1000;
+  let currentTime = 1602719995;  // moment().unix(); //1602719995
+  let diffTime = eventDate - currentTime;
+  let duration = moment.duration(diffTime * 1000, 'milliseconds');
+  let interval = 1000;
+  let timeout = null;
 
   // Remove the SetInterval function one the event starts
   useEffect(() => {
     if (diffTime > 0) {
-      setInterval(function () {
+      timeout = setInterval(function () {
         duration = moment.duration(duration - interval, 'milliseconds');
         if (!timeUp && isValidTime(duration)) {
           document.getElementById('timer-day').innerHTML = isValidTime(duration)
@@ -38,6 +39,8 @@ function CountDown() {
     } else {
       setTimeUp(true);
     }
+
+    return () => clearInterval(timeout);
   }, []);
 
   const Counter = () => (
