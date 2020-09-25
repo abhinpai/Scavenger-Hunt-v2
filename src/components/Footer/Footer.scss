@@ -7,11 +7,11 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
 
   & img {
     height: 3rem;
-    margin: 0 24px;
+    margin-right: 12px;
     cursor: pointer;
 
     &:hover {

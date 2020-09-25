@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import Camera from '../../resources/images/Camera.png';
+import React, { useEffect } from 'react';
 import Graphone from '../../resources/images/gramphone.png';
 import './Footer.scss';
 import PirateAudio from '../../resources/audio/pirates.mp3';
@@ -29,7 +28,6 @@ function Footer() {
       <audio id='myAudio'>
         <source src={PirateAudio} type='audio/mpeg' />
       </audio>
-      <img src={Camera} alt='Camera' />
       <img src={Graphone} alt='Graphone' onClick={controlMusic} />
     </footer>
   );

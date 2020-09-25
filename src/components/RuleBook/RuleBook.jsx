@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import './RuleBook.scss';
 import PageImage from '../../resources/images/page.jpg';
-import Cover from '../../resources/images/cover.svg';
-import Back from '../../resources/images/book-front-cover.jpg';
+import Cover from '../../resources/images/cover.png';
+import Back from '../../resources/images/back-cover.jpg';
 import { ActionGameStarted, ActionShowQuestions } from '../../state/actions';
 import useData from '../../state/dataLayer';
 
