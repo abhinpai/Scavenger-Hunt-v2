@@ -1,3 +1,8 @@
+:root {
+  --cursorX: 50%;
+  --cursorY: 50%;
+}
+
 body,
 html {
   margin: 0;
@@ -12,7 +17,8 @@ html {
 }
 
 .dark-body-bg {
-  background: linear-gradient(0deg, black, #080808de), url(/static/media/sail-bg.b2453c8d.jpg);
+  background: linear-gradient(0deg, black, #080808de),
+    url(/static/media/sail-bg.b2453c8d.jpg);
 }
 
 @font-face {
