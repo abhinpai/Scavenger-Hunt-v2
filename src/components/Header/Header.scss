@@ -1,0 +1,40 @@
+.header {
+  font-family: 'Cinzel Decorative';
+  width: 100%;
+  color: #ff98004a;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  &__timer {
+    max-height: 4rem;
+    display: flex;
+    align-items: center;
+    & img {
+      height: 2.8rem;
+      margin-left: 0.5rem;
+      margin-left: 12px;
+      animation: shake 200ms ease-in infinite;
+    }
+
+    & span {
+      font-weight: bolder;
+      font-size: 1.4rem;
+      margin-left: 12px;
+    }
+  }
+
+  &__btngrp {
+    display: flex;
+    margin-right: 1rem;
+
+    &__btn {
+      max-height: 50px;
+      & p {
+        font-size: 16px;
+        font-weight: bolder;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Questions.scss';
 import QuestionsImg from '../../resources/images/question_bg.png';
-import ClockImg from '../../resources/images/clock.png';
+import Header from '../Header/Header';
 
 function Questions() {
   useEffect(() => {
@@ -18,30 +18,17 @@ function Questions() {
     document.getElementById('q-Img').style.setProperty('--cursorY', y + 'px');
   }
 
-  const trunOnTorch =() =>{
+  const trunOnTorch = () => {
     document.getElementById('q-Img').classList.add('spotlight');
-  }
+  };
 
-  const trunOffTorch =() =>{
+  const trunOffTorch = () => {
     document.getElementById('q-Img').classList.remove('spotlight');
-  }
+  };
 
   return (
     <div className='question'>
-      <header className='question__header'>
-        <div className='question__header__timer'>
-          <span>72:00 Hr</span>
-          <img src={ClockImg} alt='bomb-iamge' />
-        </div>
-        <div className='question__header__btngrp'>
-          <div className='question__header__btngrp__btn  wodden-btn'>
-            <p>Enemy Ships</p>
-          </div>
-          <div className='question__header__btngrp__btn wodden-btn'>
-            <p>The Rules</p>
-          </div>
-        </div>
-      </header>
+      <Header />
       <main className='questions-div'>
         <div className='questions-div__block'>
           <div
@@ -51,10 +38,16 @@ function Questions() {
           ></div>
           <input placeholder='Enter your answer...' />
           <div className='questions-div__block__btns'>
-            <div onClick={trunOnTorch} className='questions-div__block__btns__btn  wodden-btn'>
+            <div
+              onClick={trunOnTorch}
+              className='questions-div__block__btns__btn  wodden-btn'
+            >
               <p>Clue</p>
             </div>
-            <div onClick={trunOffTorch} className='questions-div__block__btns__btn  wodden-btn'>
+            <div
+              onClick={trunOffTorch}
+              className='questions-div__block__btns__btn  wodden-btn'
+            >
               <p>Skip</p>
             </div>
             <div
