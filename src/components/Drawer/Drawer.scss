@@ -1,0 +1,28 @@
+.drawer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 1000;
+  display: flex;
+
+  & img {
+    height: 60px;
+    margin: 12px;
+    cursor: pointer;
+  }
+
+  &__div {
+    overflow-y: auto;
+    overflow-y: hidden;
+    height: 100%;
+    width: 40%;
+    margin-left: auto;
+    transition: all 1s ease-in;
+    margin-right: -50rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}

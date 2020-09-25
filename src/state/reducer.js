@@ -4,6 +4,8 @@ const {
   SET_SHOW_QUESTIONS,
   SET_GAME_STARTED,
   PLAY_MUSIC,
+  SHOW_DRAWER,
+  SET_SELECTED_DRAWER
 } = require('./actions');
 
 export const initialState = {
@@ -12,6 +14,8 @@ export const initialState = {
   eventTitle: 'THE PIRATES RESURRECT',
   isGameStarted: false, // set this to false when game start this should set from API after login
   data: null,
+  selectedDrawer: null,
+  showDrawer: false,
   showLoginPage: false, // This will be update on click of login btn from landing page
   showQuestions: false, // after successfull login set this to true
 };
@@ -28,6 +32,10 @@ const reducer = (state, action) => {
       return { ...state, isGameStarted: action.payload.started };
     case PLAY_MUSIC:
       return { ...state, playMusic: action.payload.play };
+    case SHOW_DRAWER:
+      return { ...state, showDrawer: action.payload.show };
+      case SET_SELECTED_DRAWER:
+        return { ...state, selectedDrawer: action.payload.selection };
     default:
       return state;
   }

@@ -1,9 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Questions.scss';
 import QuestionsImg from '../../resources/images/question_bg.png';
 import Header from '../Header/Header';
+import Drawer from '../Drawer/Drawer';
+import useData from '../../state/dataLayer';
 
 function Questions() {
+  const [{ showDrawer }] = useData();
+
   useEffect(() => {
     document.getElementById('app-body').classList.add('dark-body-bg');
     console.log(document.getElementById('q-Img'));
@@ -59,6 +63,7 @@ function Questions() {
           </div>
         </div>
       </main>
+      {showDrawer && <Drawer />}
     </div>
   );
 }

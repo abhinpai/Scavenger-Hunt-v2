@@ -9,20 +9,20 @@ import useData from './state/dataLayer';
 function ComponentManager() {
   const [{ showLoginPage, showQuestions, isGameStarted }] = useData();
   return (
-    // <Questions />
-    <Fragment>
-      {!showLoginPage && !showQuestions ? (
-        <Landing />
-      ) : showLoginPage && !showQuestions ? (
-        <Login />
-      ) : !showLoginPage && showQuestions && !isGameStarted ? (
-        <RuleBook />
-      ) : (
-        <Questions />
-      )}
+    <Questions />
+    // <Fragment>
+    //   {!showLoginPage && !showQuestions ? (
+    //     <Landing />
+    //   ) : showLoginPage && !showQuestions ? (
+    //     <Login />
+    //   ) : !showLoginPage && showQuestions && !isGameStarted ? (
+    //     <RuleBook />
+    //   ) : (
+    //     <Questions />
+    //   )}
 
-      <Footer />
-    </Fragment>
+    //   <Footer />
+    // </Fragment>
   );
 }
 
