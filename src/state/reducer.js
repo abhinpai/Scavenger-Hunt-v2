@@ -8,7 +8,7 @@ const {
 
 export const initialState = {
   eventDate: 1602720000,
-  playMusic: false,
+  playMusic: false, // set it as true while deploying
   eventTitle: 'THE PIRATES RESURRECT',
   isGameStarted: false, // set this to false when game start this should set from API after login
   data: null,
