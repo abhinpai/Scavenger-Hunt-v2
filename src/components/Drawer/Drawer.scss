@@ -23,6 +23,29 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
 
+.rule-div,
+.ships-div {
+  overflow: auto;
+  padding: 0.8rem 2rem 1rem 4rem;
+  height: 100vh;
+}
+
+.rule-div, .ships-div  {
+  & h2 {
+    font-family: 'Pirata One';
+    color: #461717;
+    font-size: 58px;
+    margin: 4px;
+  }
+
+  & ul {
+    color: #502626;
+    padding: 0;
+    font-family: 'Pacifico';
+    font-size: 22px;
+    letter-spacing: 2px;
   }
 }
