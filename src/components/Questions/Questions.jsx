@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './Questions.scss';
 import QuestionsImg from '../../resources/images/question_bg.png';
 import Header from '../Header/Header';
@@ -10,7 +10,6 @@ function Questions() {
 
   useEffect(() => {
     document.getElementById('app-body').classList.add('dark-body-bg');
-    console.log(document.getElementById('q-Img'));
     document.getElementById('q-Img').addEventListener('mousemove', update);
     document.getElementById('q-Img').addEventListener('touchmove', update);
   }, []);

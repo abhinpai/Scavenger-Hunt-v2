@@ -58,7 +58,7 @@ function Drawer() {
 
   return (
     <div id='drawer-div' className='drawer'>
-      <img onClick={closeDrawer} src={SkullHolder} alt='Skull image' />
+      <img onClick={closeDrawer} src={SkullHolder} alt='Skull' />
       <div
         id='drawer'
         className='drawer__div'
